@@ -1,0 +1,53 @@
+
+body,html{
+	height:700px;
+	font-size:0px;
+}
+div.div-container-main{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	height:100%;
+	font-size:35px;
+	
+}
+h1.h1-title{
+	font-size:60px;
+}
+strong.strong-button{
+	color:black;
+	font-size:30px;
+	cursor:pointer;
+}
+strong.strong-button:hover{
+	color:red;
+}
+img.img-home{
+	position:relative;
+	width:300px;
+	height:300px;
+	border:2px solid black;
+}
+div.div-explain{
+	display:flex;
+	flex-direction:column;
+	width:300px;	
+	margin:10px;
+}
+div.div-explain strong{
+	color: red;
+	font-size:25px;
+	text-align:center;
+}
+div.div-explain p {
+	font-size:15px;
+	text-align:center;
+}
+div.div-introduce{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	font-size:20px;
+}
+
