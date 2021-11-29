@@ -1,6 +1,7 @@
 package kr.ac.hanung.model;
 
-import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -13,9 +14,10 @@ import lombok.ToString;
 @NoArgsConstructor
 public class ClassHasUser {
 
-	@NotEmpty(message="no empty")
+	
+	@Pattern(regexp="^[a-zA-Z0-9]*$",message="no 특수문자")
 	private String classCode;
-	@NotEmpty(message="no empty")
+	
 	private String userName;
 	private int registerYear;
 	private String className;

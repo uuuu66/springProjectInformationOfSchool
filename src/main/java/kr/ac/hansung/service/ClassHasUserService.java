@@ -26,5 +26,17 @@ public class ClassHasUserService {
 		return classHasUserDao.getLearnedClasses(username);
 		
 	}
+	public List<ClassHasUser> getSemesterClasses(String username){
+		return classHasUserDao.getSemesterClasses(username);
+	}
+	public List<ClassHasUser> getDetailSemesterClasses(String username,String year,String semester){
+		return classHasUserDao.getDetailClasses(username, year, semester);
+	}
+	public List<ClassHasUser> getEnableClasses(String username){
+		return classHasUserDao.getEnableClasses(username);
+	}
+	public boolean insert(String username,ClassHasUser classHasUser) {
+		return classHasUserDao.Insert(username, classHasUser);
+	}
 
 }

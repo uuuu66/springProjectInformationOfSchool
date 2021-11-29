@@ -6,14 +6,14 @@
 <head>
 <meta charset="UTF-8">
 <title>Welcome</title>
-<link href="${pageContext.request.contextPath}/resources/css/main.css" rel="stylesheet"/> 
+<link href="${pageContext.request.contextPath}/resources/css/main.css" type="text/css" rel="stylesheet"/> 
 </head>
 <body>
 	<div class="div-container-main">
-		<a><strong class="strong-button">>학사정보<</strong></a>
-		<h1 class="title">학과소개</h1>
+		<a href="${pageContext.request.contextPath }/information"><strong class="strong-button">>학사정보<</strong></a>
+		<h1 class="h1-title">학과소개</h1>
 	
-		<div class="div-introduce">
+		<div class="div-flex-row">
 			<div class="div-explain">
 				<img class="img-home"  src="${pageContext.request.contextPath}/resources/images/internship.jpg" alt="1">
 				

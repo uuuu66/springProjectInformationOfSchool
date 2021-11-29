@@ -1,8 +1,10 @@
 
 body,html{
-	height:700px;
+	height:auto;
 	font-size:0px;
+	overflow:auto;
 }
+
 div.div-container-main{
 	display:flex;
 	flex-direction:column;
@@ -15,10 +17,30 @@ div.div-container-main{
 h1.h1-title{
 	font-size:60px;
 }
+table{
+	border: black 1px double;
+	text-align:center;
+}
+table tbody tr{
+	border: black 1px solid;
+	
+}
+table tbody td{
+	border: black 1px solid;
+
+}
+table thead th{
+	border: black 1px solid;
+	background-color:rgba(25,38,100,0.7);
+}
 strong.strong-button{
 	color:black;
 	font-size:30px;
 	cursor:pointer;
+	
+}
+strong.strong-warn{
+	color:red;
 }
 strong.strong-button:hover{
 	color:red;
@@ -44,10 +66,38 @@ div.div-explain p {
 	font-size:15px;
 	text-align:center;
 }
-div.div-introduce{
+div.div-flex-row{
 	display:flex;
 	flex-direction:row;
 	justify-content:space-between;
+	align-items:space-between;
+	align-content:space-between;
 	font-size:20px;
+}
+div.div-flex-row strong{
+	margin:5px;
+}
+form.form-signin{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	align-content:center;
+	width:700px;
+	border:2px solid black;
+}
+form h2{
+	border-bottom:2px solid black;
+}
+button.btn-lg{
+	width:300px;
+	height:100px;
+	font-size:30px;
+	background-color:skyblue;
+	box-shadow:0px 15px black;
+}
+form input{
+	height:35px;
+	font-size:30px;
 }
 
